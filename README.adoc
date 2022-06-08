@@ -61,21 +61,6 @@ repositories {
     mavenCentral()
 }
 ----
-Or for compatibility with old versions of Gradle:
-[source,groovy]
-----
-apply plugin: 'io.github.vlsi.karaf'
-
-buildscript {
-    dependencies {
-        classpath "gradle.plugin.io.github.vlsi:gradle-karaf-plugin:0.0.49"
-    }
-}
-
-repositories {
-    mavenCentral()
-}
-----
 
 == Example
 
