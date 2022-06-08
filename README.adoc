@@ -1,9 +1,9 @@
 gradle-karaf-plugin
 ===================
 
-https://github.com/lburgazzoli/gradle-karaf-plugin seems to be abandoned, so this fork resurrects the releases.
+image:https://github.com/vlsi/gradle-karaf-plugin/workflows/Build/badge.svg?branch=master[title="Build Status", link="https://github.com/vlsi/gradle-karaf-plugin/actions"] image:https://maven-badges.herokuapp.com/maven-central/io.github.vlsi/gradle-karaf-plugin/badge.svg[title="Maven Central", link="https://maven-badges.herokuapp.com/maven-central/io.github.vlsi/gradle-karaf-plugin"] image:http://img.shields.io/:license-apache-brightgreen.svg[title="License", link="http://www.apache.org/licenses/LICENSE-2.0.html"]image:https://badges.gitter.im/vlsi/gradle-karaf-plugin.svg[link="https://gitter.im/vlsi/gradle-karaf-plugin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"]
 
-image:https://github.com/vlsi/gradle-karaf-plugin/workflows/Build%20PR/badge.svg[title="Build Status", link="https://github.com/vlsi/gradle-karaf-plugin/actions"] image:https://maven-badges.herokuapp.com/maven-central/io.github.vlsi/gradle-karaf-plugin/badge.svg[title="Maven Central", link="https://maven-badges.herokuapp.com/maven-central/io.github.vlsi/gradle-karaf-plugin"] image:http://img.shields.io/:license-apache-brightgreen.svg[title="License", link="http://www.apache.org/licenses/LICENSE-2.0.html"]image:https://badges.gitter.im/vlsi/gradle-karaf-plugin.svg[link="https://gitter.im/vlsi/gradle-karaf-plugin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"]
+https://github.com/lburgazzoli/gradle-karaf-plugin seems to be abandoned, so this fork resurrects the releases.
 
 == Features
 
