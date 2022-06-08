@@ -17,10 +17,10 @@ plugins {
     id 'java'
     id 'groovy'
     id 'maven'
-    id "com.github.lburgazzoli.karaf" version "0.0.9"
+    id "io.github.vlsi.karaf" version "0.0.9"
 }
 
-group = 'com.lburgazzoli.github'
+group = 'com.example'
 version = '1.2.3'
 
 repositories {

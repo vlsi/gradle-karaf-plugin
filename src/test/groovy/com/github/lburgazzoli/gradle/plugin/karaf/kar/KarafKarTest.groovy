@@ -28,7 +28,7 @@ class KarafKarTest extends KarafTestSupport {
     Project project
 
     def setup() {
-        project = setUpProject('com.lburgazzoli.github', 'gradle-karaf', '1.2.3')
+        project = setUpProject('io.github.vlsi', 'gradle-karaf', '1.2.3')
     }
 
     def cleanup() {
@@ -75,7 +75,7 @@ class KarafKarTest extends KarafTestSupport {
 
             def archive = kar.archiveFile.get().asFile
             def zf = new java.util.zip.ZipFile(archive)
-            null != zf.getEntry("repository/com/lburgazzoli/github/${project.name}/${project.version}/${project.name}-${project.version}-features.xml")
+            null != zf.getEntry("repository/io/github/vlsi/${project.name}/${project.version}/${project.name}-${project.version}-features.xml")
             null != zf.getEntry("repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar")
     }
 }

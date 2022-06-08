@@ -25,7 +25,7 @@ class KarafFeaturesTest extends KarafTestSupport {
     Project project
 
     def setup() {
-        project = setUpProject('com.lburgazzoli.github', 'gradle-karaf', '1.2.3')
+        project = setUpProject('io.github.vlsi', 'gradle-karaf', '1.2.3')
     }
 
     def cleanup() {
@@ -258,7 +258,7 @@ class KarafFeaturesTest extends KarafTestSupport {
 
             featuresFile.text.contains("xmlns=\"http://karaf.apache.org/xmlns/features/v1.3.0\"") == true
 
-            findAllBundles(featuresXml, 'wrap:mvn:com.lburgazzoli.github/gradle-karaf/1.2.3').size() == 1
+            findAllBundles(featuresXml, 'wrap:mvn:io.github.vlsi/gradle-karaf/1.2.3').size() == 1
             findAllBundles(featuresXml, 'mvn:com.google.guava/guava/19.0').size() == 1
             findAllBundles(featuresXml, 'mvn:com.google.code.gson/gson/2.3.1').size() == 1
             findAllBundles(featuresXml, '^*.mvn:com.squareup.retrofit/retrofit/1.9.0$').size() == 1
@@ -572,10 +572,10 @@ class KarafFeaturesTest extends KarafTestSupport {
             featuresXml != null
 
             featuresXml.feature.'**'.find { it.@name == 'hazelcast'}.bundle.'**'.findAll {
-                    it.text().contains('wrap:mvn:com.lburgazzoli.github/gradle-karaf/1.2.3')
+                    it.text().contains('wrap:mvn:io.github.vlsi/gradle-karaf/1.2.3')
                 }.size() == 0
             featuresXml.feature.'**'.find { it.@name == 'squareup'}.bundle.'**'.findAll {
-                    it.text().contains('wrap:mvn:com.lburgazzoli.github/gradle-karaf/1.2.3')
+                    it.text().contains('wrap:mvn:io.github.vlsi/gradle-karaf/1.2.3')
                 }.size() == 1
     }
 }

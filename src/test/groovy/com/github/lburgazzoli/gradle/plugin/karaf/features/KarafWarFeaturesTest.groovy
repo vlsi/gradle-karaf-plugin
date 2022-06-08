@@ -26,7 +26,7 @@ class KarafWarFeaturesTest extends KarafTestSupport {
     Project project
 
     def setup() {
-        project = setUpProject('com.lburgazzoli.github', 'gradle-karaf', '1.2.3')
+        project = setUpProject('io.github.vlsi', 'gradle-karaf', '1.2.3')
     }
 
     def cleanup() {
@@ -119,7 +119,7 @@ class KarafWarFeaturesTest extends KarafTestSupport {
             def featuresXml = new XmlSlurper().parse(featuresFile)
             featuresXml != null
 
-            findAllBundles(featuresXml, '^war:mvn:com.lburgazzoli.github/gradle-karaf/1.2.3/war$').size() == 1
-            findAllBundles(featuresXml, '^mvn:com.lburgazzoli.github/gradle-karaf/1.2.3$').size() == 0
+            findAllBundles(featuresXml, '^war:mvn:io.github.vlsi/gradle-karaf/1.2.3/war$').size() == 1
+            findAllBundles(featuresXml, '^mvn:io.github.vlsi/gradle-karaf/1.2.3$').size() == 0
     }
 }

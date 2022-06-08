@@ -19,7 +19,7 @@ plugins {
 //
 // *****************************************************************************
 
-group               = 'com.github.lburgazzoli'
+group               = 'io.github.vlsi.karaf'
 description         = 'A gradle plugin for Karaf'
 sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
@@ -29,12 +29,12 @@ ext {
     isSnapshotVersion = version.endsWith("SNAPSHOT")
     isCI              = Boolean.valueOf("$System.env.CI")
     isPR              = "false" != System.env.PR 
-    gitRoot           = "https://github.com/lburgazzoli"
-    gitProject        = "https://github.com/lburgazzoli/gradle-karaf-plugin"
-    gitURL            = "git@github.com:lburgazzoli/gradle-karaf-plugin"
+    gitRoot           = "https://github.com/vlsi"
+    gitProject        = "https://github.com/vlsi/gradle-karaf-plugin"
+    gitURL            = "git@github.com:vlsi/gradle-karaf-plugin"
     groovyVersion     = GroovySystem.version.replaceAll(/\.\d+$/,'')
     gradleScriptDir   = "${rootProject.projectDir}/gradle"
-    gradlePluginId    = "com.github.lburgazzoli.karaf"
+    gradlePluginId    = "io.github.vlsi.karaf"
     gradlePluginTags  = [ 'karaf' ]
     gradleCiTasks     = (isReleaseVersion || isPR) ? ['clean', 'test'] : ['clean', 'test', 'uploadArchives']
 
@@ -195,6 +195,10 @@ uploadArchives {
                     developer {
                         id 'lburgazzoli'
                         name 'Luca Burgazzoli'
+                    }
+                    developer {
+                        id 'vlsi'
+                        name 'Vladimir Sitnikov'
                     }
                 }
             }

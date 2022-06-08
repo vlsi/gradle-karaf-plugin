@@ -27,7 +27,7 @@ class KarafPluginTest extends KarafTestSupport {
     Project project
 
     def setup() {
-        project = setUpProject('com.lburgazzoli.github', 'gradle-karaf', '1.2.3')
+        project = setUpProject('io.github.vlsi', 'gradle-karaf', '1.2.3')
     }
 
     def cleanup() {

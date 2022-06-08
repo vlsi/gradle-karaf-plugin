@@ -1,7 +1,9 @@
 gradle-karaf-plugin
 ===================
 
-image:https://github.com/lburgazzoli/gradle-karaf-plugin/workflows/Build%20PR/badge.svg[title="Build Status", link="https://github.com/lburgazzoli/gradle-karaf-plugin/actions"] image:https://maven-badges.herokuapp.com/maven-central/com.github.lburgazzoli/gradle-karaf-plugin/badge.svg[title="Maven Central", link="https://maven-badges.herokuapp.com/maven-central/com.github.lburgazzoli/gradle-karaf-plugin"] image:http://img.shields.io/:license-apache-brightgreen.svg[title="License", link="http://www.apache.org/licenses/LICENSE-2.0.html"]image:https://badges.gitter.im/lburgazzoli/gradle-karaf-plugin.svg[link="https://gitter.im/lburgazzoli/gradle-karaf-plugin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"]
+https://github.com/lburgazzoli/gradle-karaf-plugin seems to be abandoned, so this fork resurrects the releases.
+
+image:https://github.com/vlsi/gradle-karaf-plugin/workflows/Build%20PR/badge.svg[title="Build Status", link="https://github.com/vlsi/gradle-karaf-plugin/actions"] image:https://maven-badges.herokuapp.com/maven-central/io.github.vlsi/gradle-karaf-plugin/badge.svg[title="Maven Central", link="https://maven-badges.herokuapp.com/maven-central/io.github.vlsi/gradle-karaf-plugin"] image:http://img.shields.io/:license-apache-brightgreen.svg[title="License", link="http://www.apache.org/licenses/LICENSE-2.0.html"]image:https://badges.gitter.im/vlsi/gradle-karaf-plugin.svg[link="https://gitter.im/vlsi/gradle-karaf-plugin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"]
 
 == Features
 
@@ -43,7 +45,7 @@ As OSGi can only install bundles, standard jars must be wrapped to add necessary
 
  - Karaf 4 support requires the xsd version be at least '1.3.0'.
 
- - This plugin is an extension of the previous https://github.com/lburgazzoli/gradle-karaf-features-plugin[gradle-karaf-feature-plugin^]
+ - This plugin is an extension of the previous https://github.com/vlsi/gradle-karaf-features-plugin[gradle-karaf-feature-plugin^]
 
 == Requirements
  - Gradle 3.0+
@@ -52,7 +54,7 @@ As OSGi can only install bundles, standard jars must be wrapped to add necessary
 [source,groovy]
 ----
 plugins {
-    id 'com.github.lburgazzoli.karaf' version '0.0.49'
+    id 'io.github.vlsi.karaf' version '0.0.49'
 }
 
 repositories {
@@ -62,11 +64,11 @@ repositories {
 Or for compatibility with old versions of Gradle:
 [source,groovy]
 ----
-apply plugin: 'com.github.lburgazzoli.karaf'
+apply plugin: 'io.github.vlsi.karaf'
 
 buildscript {
     dependencies {
-        classpath "gradle.plugin.com.github.lburgazzoli:gradle-karaf-plugin:0.0.49"
+        classpath "gradle.plugin.io.github.vlsi:gradle-karaf-plugin:0.0.49"
     }
 }
 
@@ -83,14 +85,14 @@ repositories {
 ----
 plugins {
     id 'java' //required only for runtime configuration
-    id 'com.github.lburgazzoli.karaf' version '0.0.49'
+    id 'io.github.vlsi.karaf' version '0.0.49'
 }
 
 repositories {
     mavenCentral()
 }
 
-group   = 'com.github.lburgazzoli'
+group   = 'io.github.vlsi'
 version = '0.0.1'
 
 configurations {
