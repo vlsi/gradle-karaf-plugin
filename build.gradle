@@ -133,11 +133,14 @@ pluginBundle {
     vcsUrl      = project.gitProject
     description = project.name
     tags        = gradlePluginTags
+}
 
+gradlePlugin {
     plugins {
         karafPlugin {
             id          = gradlePluginId
             displayName = project.description
+            implementationClass = 'com.github.lburgazzoli.gradle.plugin.karaf.KarafPlugin'
         }
     }
 }
