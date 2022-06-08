@@ -36,7 +36,7 @@ ext {
     gradleScriptDir   = "${rootProject.projectDir}/gradle"
     gradlePluginId    = "io.github.vlsi.karaf"
     gradlePluginTags  = [ 'karaf' ]
-    gradleCiTasks     = (isReleaseVersion || isPR) ? ['clean', 'test'] : ['clean', 'test', 'uploadArchives']
+    gradleCiTasks     = (isReleaseVersion || isPR) ? ['check'] : ['check', 'uploadArchives']
 
     versions = [
         slf4j  : '1.7.21',
